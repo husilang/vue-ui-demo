@@ -46,5 +46,6 @@
     .docs-page {
         position: relative;
         height: 100%;
+        overflow-y:hidden;
     }
 </style>

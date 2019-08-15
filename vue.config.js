@@ -2,7 +2,6 @@ const path = require("path");
 const PrerenderSpaPlugin = require("prerender-spa-plugin");
 const MarkdownItContainer = require("markdown-it-container");
 const cheerio = require('cheerio');
-
 const striptags = (str, tags) => {
     const $ = cheerio.load(str, { decodeEntities: false })
 
@@ -19,8 +18,6 @@ const striptags = (str, tags) => {
 
     return $.html()
 };
-
-
 const convertHtml = function (str) {
     return str.replace(/(&#x)(\w{4});/gi, $0 => String.fromCharCode(parseInt(encodeURIComponent($0).replace(/(%26%23x)(\w{4})(%3B)/g, '$2'), 16)))
 };
