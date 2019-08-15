@@ -1,15 +1,26 @@
 <template>
     <div class="main-skeleton">
-        <zm-skeleton height="80px"></zm-skeleton>
+        <zm-skeleton height="50px"></zm-skeleton>
         <div>
-            <div class="skeleton-container">
-                <div class="skeleton">
-                    <zm-skeleton height="300px"></zm-skeleton>
-                </div>
-                <zm-skeleton height="45px"></zm-skeleton>
+            <div class="skeleton-sidebar">
+                <zm-skeleton height="600px"></zm-skeleton>
             </div>
-            <div class="skeleton-bottom">
-                <zm-skeleton height="45px"></zm-skeleton>
+            <div class="skeleton-content">
+                <div class="section" style="width: 100px;margin-bottom: 20px;">
+                    <zm-skeleton height="28px"></zm-skeleton>
+                </div>
+                <div class="section" style="width: 200px;margin-bottom: 20px;">
+                    <zm-skeleton height="28px"></zm-skeleton>
+                </div>
+                <div class="section" style="width: 400px;margin-bottom: 20px;">
+                    <zm-skeleton height="28px"></zm-skeleton>
+                </div>
+                <div class="section" style="width: 600px;margin-bottom: 20px;">
+                    <zm-skeleton height="28px"></zm-skeleton>
+                </div>
+                <div class="section" style="width: 300px;margin-bottom: 20px;">
+                    <zm-skeleton height="28px"></zm-skeleton>
+                </div>
             </div>
         </div>
     </div>
@@ -24,20 +35,17 @@
     }
 </script>
 <style lang="scss">
-    .skeleton-container{
-        width: 960px;
-        margin: 0 auto;
+    .skeleton-sidebar{
+        width: 180px;
         text-align: center;
-        padding: 100px 0;
+        margin-top: 20px;
+        float: left;
     }
-    .skeleton-bottom {
-        width: 960px;
-        margin: 0 auto;
+    .skeleton-content {
+        margin-top: 20px;
+        width: calc(100% - 200px);
         text-align: center;
-    }
-    .skeleton {
-        margin: 0 auto;
-        width: 300px;
-        margin-bottom: 56px;
+        margin-left: 20px;
+        float: left;
     }
 </style>

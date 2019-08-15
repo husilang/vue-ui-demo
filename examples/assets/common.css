@@ -1,0 +1,21 @@
+html,body{
+    height: 100%;
+}
+body,ul,li,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Microsoft YaHei UI";
+    font-size: 14px;
+    color: #333;
+}
+ul,li{
+    list-style: none;
+}
+hr{
+    border-top: 1px solid #fdfdfd;
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: 30px;
+}

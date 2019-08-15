@@ -4,7 +4,7 @@ import router from './router/router'
 import store from './store'
 import ZmUI from '../packages/index'
 
-
+import "./assets/common.css"
 
 Vue.use(ZmUI);
 Vue.config.productionTip = false;
