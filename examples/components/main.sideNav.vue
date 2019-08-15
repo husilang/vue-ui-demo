@@ -1,6 +1,6 @@
 <template>
     <div class="docs-nav">
-        <div>
+        <div style="padding-top: 10px;">
             <ul>
                 <li v-for="(item,index) in navList" :key="index" @click="$router.push({name: item.routerName})">{{item.name}}</li>
             </ul>
@@ -31,6 +31,7 @@
             padding-left: 24px;
             cursor: pointer;
             line-height: 30px;
+            font-size: 15px;
 
             &:hover {
                 color: olivedrab;
