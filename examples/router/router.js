@@ -1,19 +1,19 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '../views/Home.vue'
+import navList from '../nav.config.json'
 
 Vue.use(Router);
+
+let routes = navList;
+
+let addComponent = (routes) => {
+  routes.forEach(route => {
+      route.component = r => require.ensure([], () => r(require(`../docs/${route.name}.md`)));
+  })
+};
+
+addComponent(routes);
+
 export default new Router({
-    routes: [
-        {
-            path: '/',
-            name: 'home',
-            component: Home
-        },
-        {
-            path: '/skeleton',
-            name: 'skeleton',
-            component: () => import('../docs/skeleton.md')
-        }
-    ]
+    routes: routes
 })

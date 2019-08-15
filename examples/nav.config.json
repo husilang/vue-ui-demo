@@ -1,0 +1,4 @@
+[
+  {"name": "home", "navName": "项目开始", "path": "/home"},
+  {"name": "skeleton", "navName": "骨架屏", "path": "/skeleton"}
+]

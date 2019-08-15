@@ -2,18 +2,22 @@
     <div class="docs-nav">
         <div style="padding-top: 10px;">
             <ul>
-                <li v-for="(item,index) in navList" :key="index" @click="$router.push({name: item.routerName})">{{item.name}}</li>
+                <li v-for="(item,index) in navList"
+                    :key="index"
+                    @click="$router.push({name: item.name})"
+                    :class="{'cur': $route.path === item.path}">
+                    {{item.navName}}
+                </li>
             </ul>
         </div>
     </div>
 </template>
 <script>
+    import navList from '../nav.config'
     export default {
         data() {
             return {
-                navList: [
-                    {name: '骨架屏', routerName: 'skeleton'},
-                ]
+                navList: navList
             }
         }
     }
@@ -33,8 +37,11 @@
             line-height: 30px;
             font-size: 15px;
 
-            &:hover {
+            &:hover, &.cur {
                 color: olivedrab;
+            }
+            &.cur {
+                font-weight: bold;
             }
         }
     }
