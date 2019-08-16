@@ -1,4 +1,4 @@
-## 项目开始 (未完待续)
+## 项目搭建 (一)
 ---
 
 项目的初衷是学习怎么封装一个基于Vue的UI组件库，顺便记录每个步骤，以及在此过程中遇到的难点及体会。
@@ -192,14 +192,22 @@ export default {
 ### ⑤编写第一个组件的文档
 小白对md的写法一窍不通...所以先去了解了md文件的常见语法，参考文章：[如何写md格式的文档](https://www.jianshu.com/p/f378e3f2e7e1?tdsourcetag=s_pcqq_aiomsg)。
 <br>
-此过程分为两步，第一步使.md文件正常展示，第二步使组件代码能在.md文件中展示运行结果以及示例代码。
+此过程分为两步，第一步使.md文件正常展示，可以看到运行结果以及代码展示，第二步封装一个代码展示的组件，使起可以展开收起，高亮显示。
 #### 编写文档
-在examples/docs下新建一个test.md文件，随意写点介绍，如下：
+在examples/docs下新建一个test.md文件，随意写点介绍，内容如下：
 ```html
-# Test
+# 测试组件
 
-Test组件是用来测试md文档是否能在项目中像vue文件一样正常展示
+测试组件是用来测试md文档是否能在项目中像vue文件一样正常展示代码运行结果
+
+运行结果如下
+<zm-test bgColor="red"></zm-test>
+
+代码如下
+`<zm-test bgColor="red"></zm-test>`
+
 ```
+
 #### 安装工具
 对md文件需要一个编译工具--vue-markdown-loader
 <br>
@@ -209,6 +217,7 @@ npm run vue-markdown-loader -D
 ```
 #### 修改配置文件
 修改vue.config.js，使md文件能像vue文件一样在项目里展示
+
 ```js
 // do something...
 
@@ -257,17 +266,16 @@ export default new Router({
 })
 ```
 #### 查看结果
-重新启动程序（<span style="color:red;">注意，只要修改了vue.config.js文件，程序都需要重新启动</span>），打开"http://localhost:8080/#/test"可以看到test.md能正常展示了~
-<br>
-到这里，第一步就结束了。
+重新启动程序（<span style="color:red;">注意，只要修改了vue.config.js文件，程序都需要重新启动</span>），打开"http://localhost:8080/#/test"可以看到文字代码展示以及一个小红点在闪烁，代表第一步完美结束~
 
-#### 组件在文档中的示例与代码展示
+#### 封装代码展示组件
 开始第二步。
 <br>
-以上，我们完成了md文件的正常展示，但是我们需要的是可以在文档中能直观看到封装的组件某段代码示例及运行结果示例。
+以上，我们完成了md文件的正常展示，但是我们可以将代码展示做得更好，封装一个代码展示的组件，使示例代码可以展开收起，代码高亮等。
 <br>
-了解了一下[markdown-it](https://markdown-it.docschina.org/)，还是不够明白，只能照着大神的代码去写，然后了解每行代码是做什么的。
+感兴趣的可以了解一下[markdown-it](https://markdown-it.docschina.org/)。
 <br>
+我还在了解中，以后会更新上。
 
 ### ⑥让项目在github上演示
 项目已经完成一小半了，我已经迫不及待将它传到github上记录下来。
@@ -311,3 +319,7 @@ npm run deploy
 在github你的项目下，找到"Settings"下的"GitHub Pages", "Source"选择"gh-pages branch"保存成功后，就拥有演示地址了~~
 
 参考文章：[https://segmentfault.com/a/1190000017084155](https://segmentfault.com/a/1190000017084155)
+
+---
+
+<span style="color: #ff5400">以上，未完待续...</span>
