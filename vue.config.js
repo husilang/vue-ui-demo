@@ -70,6 +70,7 @@ module.exports = {
             filename: "index.html"
         }
     },
+    publicPath: process.env.NODE_ENV === 'production' ? '/zm-ui/' : '/',
     chainWebpack: config => {
         config.resolve.alias
             .set("@", path.resolve("examples"))
