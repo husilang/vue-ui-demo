@@ -1,8 +1,5 @@
-.zm-row {
-  position: relative;
-  box-sizing: border-box;
-
-  @include when(justify-center) {
-    justify-content: center;
+@component-namespace zm {
+  @component row {
+    position: relative;
   }
 }
