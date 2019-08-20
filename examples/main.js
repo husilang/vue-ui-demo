@@ -5,7 +5,7 @@ import store from './store'
 import ZmUI from '../packages/index'
 import demoBlock from './components/demo-block'
 
-import "../packages/theme-chalk/src/index.scss"
+import "../packages/theme-chalk/lib/index.css"
 import "./assets/common.css"
 
 Vue.component('demo-block', demoBlock);

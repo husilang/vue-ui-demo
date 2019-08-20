@@ -9,8 +9,6 @@
 
 ::: demo
 ```html
-<div>
-    <zm-skeleton height="50px"></zm-skeleton>
-</div>
+<zm-skeleton height="50px"></zm-skeleton>
 ```
 :::

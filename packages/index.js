@@ -1,11 +1,13 @@
 import ZmSkeleton from './skeleton/index'
 import ZmTest from './test/index'
 import ZmRow from './row/index'
+import ZmCol from './col/index'
 
 const components = [
     ZmSkeleton,
     ZmTest,
     ZmRow,
+    ZmCol,
 ];
 
 const install = function (Vue) {
@@ -21,5 +23,6 @@ export default {
     install,
     ZmSkeleton,
     ZmTest,
-    ZmRow
+    ZmRow,
+    ZmCol,
 }
