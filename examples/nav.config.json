@@ -3,5 +3,6 @@
   {"name": "project", "navName": "项目搭建（二）", "path": "/project"},
   {"name": "test", "navName": "测试", "path": "/test"},
   {"name": "layout", "navName": "布局", "path": "/layout"},
-  {"name": "skeleton", "navName": "骨架屏", "path": "/skeleton"}
+  {"name": "skeleton", "navName": "骨架屏", "path": "/skeleton"},
+  {"name": "container", "navName": "container", "path": "/container"}
 ]

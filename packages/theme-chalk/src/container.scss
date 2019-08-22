@@ -1,0 +1,12 @@
+@b container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-basis: auto;
+  box-sizing: border-box;
+  min-width: 0;
+
+  @when vertical{
+    flex-direction: column;
+  }
+}
