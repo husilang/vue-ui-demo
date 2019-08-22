@@ -6,6 +6,7 @@ var postcss = require("gulp-postcss");
 
 function compile() {
     var processors = [
+
         bem({
             defaultNamespace: 'zm',
             style: 'suit',
@@ -17,7 +18,7 @@ function compile() {
                 utility: 'util'
             }
         }),
-        nested()
+        nested(),
     ];
     return src("./src/*.scss")
         .pipe(sass.sync())

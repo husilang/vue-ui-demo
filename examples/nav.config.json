@@ -4,5 +4,6 @@
   {"name": "test", "navName": "测试", "path": "/test"},
   {"name": "layout", "navName": "布局", "path": "/layout"},
   {"name": "skeleton", "navName": "骨架屏", "path": "/skeleton"},
-  {"name": "container", "navName": "container", "path": "/container"}
+  {"name": "container", "navName": "container", "path": "/container"},
+  {"name": "link", "navName": "link", "path": "/link"}
 ]

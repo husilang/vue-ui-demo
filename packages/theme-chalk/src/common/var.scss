@@ -1,0 +1,26 @@
+
+
+
+/*Color*/
+$--color-primary: #409EFF !default;
+$--color-success: #67C23A !default;
+$--color-warning: #E6A23C !default;
+$--color-danger: #F56C6C !default;
+$--color-info: #909399 !default;
+$--color-text-regular: #606266 !default;
+
+/*Typography*/
+$--font-size-base: 14px !default;
+$--font-weight-primary: 500 !default;
+
+
+/*link*/
+$--link-font-size: $--font-size-base !default;
+$--link-font-weight: $--font-weight-primary !default;
+$--link-default-font-color: $--color-text-regular !default;
+$--link-default-active-color: $--color-primary !default;
+$--link-primary-font-color: $--color-primary !default;
+$--link-success-font-color: $--color-success !default;
+$--link-warning-font-color: $--color-warning !default;
+$--link-danger-font-color: $--color-danger !default;
+$--link-info-font-color: $--color-info !default;
