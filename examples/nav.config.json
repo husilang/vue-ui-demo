@@ -6,5 +6,6 @@
   {"name": "skeleton", "navName": "骨架屏", "path": "/skeleton"},
   {"name": "container", "navName": "container", "path": "/container"},
   {"name": "link", "navName": "link", "path": "/link"},
-  {"name": "page-header", "navName": "page-header", "path": "/page-header"}
+  {"name": "page-header", "navName": "page-header", "path": "/page-header"},
+  {"name": "divider", "navName": "divider", "path": "/divider"}
 ]
