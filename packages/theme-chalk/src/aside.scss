@@ -1,4 +1,6 @@
-@b aside {
+@import "mixins/mixin";
+
+@include b(aside) {
   overflow: auto;
   box-sizing: border-box;
   flex-shrink: 0;

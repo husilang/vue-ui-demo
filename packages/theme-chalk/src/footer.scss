@@ -1,4 +1,6 @@
-@b footer{
+@import "mixins/mixin";
+
+@include b(footer){
   box-sizing: border-box;
   flex-shrink: 0;
 }

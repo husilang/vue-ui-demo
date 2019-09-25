@@ -1,3 +1,4 @@
+/*
 @import "common/var";
 
 $typeMap: (
@@ -7,6 +8,18 @@ $typeMap: (
   warning: $--link-warning-font-color,
   info: $--link-info-font-color
 );
+
+@util clearfix {
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+
+  *zoom: 1;
+}
 
 @b link{
   display: inline-flex;
@@ -21,6 +34,7 @@ $typeMap: (
   padding: 0;
   font-size: $--link-font-size;
   font-weight: $--link-font-weight;
+
   &.zm-link--default {
     color: $--link-default-font-color;
   }
@@ -41,4 +55,9 @@ $typeMap: (
   }
 
 
+}*/
+@import "mixins/mixin";
+
+@include b(link) {
+  display: block;
 }
