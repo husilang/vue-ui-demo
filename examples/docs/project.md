@@ -5,23 +5,22 @@
 <br>
 以及我想更加丰富的东西，scss的bem风格设置，组件的单元测试，组件库的样式主题，组件库的国际化...
 
-### ①scss的bem风格设置
+### ①css的bem风格设置
 前面提到，BEM风格的css有利于我们对样式的全局把控，所以，UI组件库有必要使用BEM，接下来是我的配置过程。
 <br>
 在packages目录下新建UI库样式组件theme-chalk
 <br>
 在theme-chalk下新建src文件夹，用来存放源文件。并在theme-chalk下运行命令"npm init"，来初始化一个package.json文件。
 <br>
-使用gulp来对scss源文件打包，需安装以下工具，运行命令
+使用gulp来对css源文件打包，需安装以下工具，运行命令
 ```js
-npm install gulp gulp-postcss gulp-sass postcss-bem-fix postcss-nested -D
+npm install gulp gulp-postcss postcss-bem-fix postcss-nested -D
 ```
 新建gulpfile.js文件
 <br>
 packages/theme-chalk/gulpfile.js 代码如下
 ```js
 var {series, src, dest, watch, task} = require("gulp");
-var sass = require("gulp-sass");
 var bem = require("postcss-bem-fix");
 var nested = require("postcss-nested");
 var postcss = require("gulp-postcss");
@@ -31,19 +30,18 @@ function compile() {
         bem(),
         nested()
     ];
-    return src("./src/*.scss") // 源文件
-        .pipe(sass.sync())  // 编译scss文件
+    return src("./src/*.css") // 源文件
         .pipe(postcss(processors)) // bem和suit风格代码转化成我们需要的css
         .pipe(dest("./lib")); // 输出目录
 }
 
 task("build", compile);
 task("watch", function () {
-    watch("./src/*.scss", series(compile));
+    watch("./src/*.css", series(compile));
 });
 
 ```
-在theme-chalk/src下新建index.scss文件，测试是否能成功转换，代码如下
+在theme-chalk/src下新建index.css文件，测试是否能成功转换，代码如下
 ```
 @component-namespace zm {
   @component row {
