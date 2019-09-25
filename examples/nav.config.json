@@ -5,5 +5,6 @@
   {"name": "layout", "navName": "布局", "path": "/layout"},
   {"name": "skeleton", "navName": "骨架屏", "path": "/skeleton"},
   {"name": "container", "navName": "container", "path": "/container"},
-  {"name": "link", "navName": "link", "path": "/link"}
+  {"name": "link", "navName": "link", "path": "/link"},
+  {"name": "page-header", "navName": "page-header", "path": "/page-header"}
 ]
