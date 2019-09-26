@@ -10,6 +10,7 @@ import ZmAside from './aside/index'
 import ZmLink from './link/index'
 import ZmPageHeader from './page-header/index'
 import ZmDivider from './divider/index'
+import ZmTag from './tag/index'
 
 const components = [
     ZmSkeleton,
@@ -24,6 +25,7 @@ const components = [
     ZmLink,
     ZmPageHeader,
     ZmDivider,
+    ZmTag,
 ];
 
 const install = function (Vue) {
@@ -49,4 +51,5 @@ export default {
     ZmLink,
     ZmPageHeader,
     ZmDivider,
+    ZmTag,
 }

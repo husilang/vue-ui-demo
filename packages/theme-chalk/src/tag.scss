@@ -1,0 +1,30 @@
+@import "mixins/mixin";
+@import "common/var";
+
+@mixin genTheme($backgroundColorWeight, $borderColorWeight, $fontColorWeight, $hoverColorWeight) {
+  background-color: mix($--tag-primary-color, $--color-white, $backgroundColorWeight);
+  border-color: mix($--tag-primary-color, $--color-white, $borderColorWeight);
+  color: mix($--tag-primary-color, $--color-white, $fontColorWeight);
+
+  @include when(hit) {
+
+  }
+}
+
+
+
+
+@include b(tag) {
+  @include genTheme(10%, 20%， 100%， 100%);
+  display: inline-block;
+  height: 32px;
+  line-height: 30px;
+  padding: $--tag-padding;
+  font-size: $--tag-font-size;
+  color: $--tag-primary-color;
+  border-radius: $--tag-border-radius;
+  box-sizing: border-box;
+  white-space: nowrap;
+  border-width: 1px;
+  border-style: solid;
+}

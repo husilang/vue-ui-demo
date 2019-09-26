@@ -7,5 +7,6 @@
   {"name": "container", "navName": "container", "path": "/container"},
   {"name": "link", "navName": "link", "path": "/link"},
   {"name": "page-header", "navName": "page-header", "path": "/page-header"},
-  {"name": "divider", "navName": "divider", "path": "/divider"}
+  {"name": "divider", "navName": "divider", "path": "/divider"},
+  {"name": "tag", "navName": "tag", "path": "/tag"}
 ]
