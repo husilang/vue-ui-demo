@@ -97,11 +97,11 @@ module.exports = {
             .loader("vue-loader")
     },
     configureWebpack: {
-        plugins: [
+        /*plugins: [
             new PrerenderSpaPlugin({
                 staticDir: path.join(__dirname, '../dist'),
                 routes: ['/']
             })
-        ]
+        ]*/
     }
 };
