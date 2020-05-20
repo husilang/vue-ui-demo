@@ -2,6 +2,7 @@
   {"name": "home", "navName": "项目搭建（一）", "path": "/"},
   {"name": "project", "navName": "项目搭建（二）", "path": "/project"},
   {"name": "test", "navName": "测试", "path": "/test"},
+  {"name": "form", "navName": "form校验表单", "path": "/form"},
   {"name": "layout", "navName": "布局", "path": "/layout"},
   {"name": "skeleton", "navName": "骨架屏", "path": "/skeleton"},
   {"name": "container", "navName": "container", "path": "/container"},
@@ -9,6 +10,5 @@
   {"name": "page-header", "navName": "page-header", "path": "/page-header"},
   {"name": "divider", "navName": "divider", "path": "/divider"},
   {"name": "tag", "navName": "tag", "path": "/tag"},
-  {"name": "badge", "navName": "badge", "path": "/badge"},
-  {"name": "form", "navName": "form", "path": "/form"}
+  {"name": "badge", "navName": "badge", "path": "/badge"}
 ]

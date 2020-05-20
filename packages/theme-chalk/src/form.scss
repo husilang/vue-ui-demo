@@ -1,0 +1,11 @@
+@import "mixins/mixin";
+
+@include b(form-item-label-required) {
+  &:after {
+    content: '*';
+    color: red;
+  }
+}
+@include b(form-item-message) {
+  color: red;
+}
