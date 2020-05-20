@@ -70,7 +70,7 @@ module.exports = {
             filename: "index.html"
         }
     },
-    publicPath: process.env.NODE_ENV === 'production' ? '/zm-ui/' : '/',
+    publicPath: process.env.NODE_ENV === 'production' ? '/vue-ui-demo/' : '/',
     chainWebpack: config => {
         config.resolve.alias
             .set("@", path.resolve("examples"))
