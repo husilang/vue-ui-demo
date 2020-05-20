@@ -16,6 +16,8 @@ import ZmBadge from './badge/index'
 import ZmForm from './form/index'
 import ZmFormItem from './form-item/index'
 import ZmInput from './input/index'
+import ZmCheckbox from './checkbox/index'
+import ZmCheckboxGroup from './checkbox-group/index'
 
 const components = [
     ZmSkeleton,
@@ -34,7 +36,9 @@ const components = [
     ZmBadge,
     ZmForm,
     ZmFormItem,
-    ZmInput
+    ZmInput,
+    ZmCheckbox,
+    ZmCheckboxGroup,
 ];
 
 const install = function (Vue) {
