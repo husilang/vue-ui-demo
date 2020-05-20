@@ -1,3 +1,4 @@
+
 import ZmSkeleton from './skeleton/index'
 import ZmTest from './test/index'
 import ZmRow from './row/index'
@@ -12,6 +13,9 @@ import ZmPageHeader from './page-header/index'
 import ZmDivider from './divider/index'
 import ZmTag from './tag/index'
 import ZmBadge from './badge/index'
+import ZmForm from './form/index'
+import ZmFormItem from './form-item/index'
+import ZmInput from './input/index'
 
 const components = [
     ZmSkeleton,
@@ -28,6 +32,9 @@ const components = [
     ZmDivider,
     ZmTag,
     ZmBadge,
+    ZmForm,
+    ZmFormItem,
+    ZmInput
 ];
 
 const install = function (Vue) {

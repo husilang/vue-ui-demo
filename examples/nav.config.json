@@ -9,5 +9,6 @@
   {"name": "page-header", "navName": "page-header", "path": "/page-header"},
   {"name": "divider", "navName": "divider", "path": "/divider"},
   {"name": "tag", "navName": "tag", "path": "/tag"},
-  {"name": "badge", "navName": "badge", "path": "/badge"}
+  {"name": "badge", "navName": "badge", "path": "/badge"},
+  {"name": "form", "navName": "form", "path": "/form"}
 ]
