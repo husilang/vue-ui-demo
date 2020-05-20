@@ -4,4 +4,4 @@
 <br>
 参考文章：[从零开始搭建Vue组件库 VV-UI](https://zhuanlan.zhihu.com/p/30948290)
 <br>
-演示地址：https://husilang.github.io/zm-ui/
+演示地址：https://husilang.github.io/vue-ui-demo/
