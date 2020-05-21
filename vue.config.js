@@ -63,6 +63,7 @@ const vueMarkdown = {
     ]
 };
 module.exports = {
+    runtimeCompiler: true,
     pages: {
         index: {
             entry: "examples/main.js",

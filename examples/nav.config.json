@@ -4,6 +4,7 @@
   {"name": "test", "navName": "测试", "path": "/test"},
   {"name": "form", "navName": "form校验表单", "path": "/form"},
   {"name": "checkbox", "navName": "checkbox", "path": "/checkbox"},
+  {"name": "display", "navName": "display", "path": "/display"},
   {"name": "layout", "navName": "布局", "path": "/layout"},
   {"name": "skeleton", "navName": "骨架屏", "path": "/skeleton"},
   {"name": "container", "navName": "container", "path": "/container"},
