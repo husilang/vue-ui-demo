@@ -66,4 +66,9 @@ export default {
     ZmDivider,
     ZmTag,
     ZmBadge,
+    ZmForm,
+    ZmFormItem,
+    ZmInput,
+    ZmCheckbox,
+    ZmCheckboxGroup,
 }
