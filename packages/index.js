@@ -19,6 +19,7 @@ import ZmInput from './input/index'
 import ZmCheckbox from './checkbox/index'
 import ZmCheckboxGroup from './checkbox-group/index'
 import ZmDisplay from './display/index'
+import ZmTable from './table-render/index'
 
 const components = [
     ZmSkeleton,
@@ -41,6 +42,7 @@ const components = [
     ZmCheckbox,
     ZmCheckboxGroup,
     ZmDisplay,
+    ZmTable,
 ];
 
 const install = function (Vue) {
@@ -74,4 +76,5 @@ export default {
     ZmCheckbox,
     ZmCheckboxGroup,
     ZmDisplay,
+    ZmTable,
 }
