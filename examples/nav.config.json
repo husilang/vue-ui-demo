@@ -13,5 +13,6 @@
   {"name": "divider", "navName": "divider", "path": "/divider"},
   {"name": "tag", "navName": "tag", "path": "/tag"},
   {"name": "badge", "navName": "badge", "path": "/badge"},
-  {"name": "table", "navName": "table", "path": "/table"}
+  {"name": "table", "navName": "table", "path": "/table"},
+  {"name": "tableSlot", "navName": "tableSlot", "path": "/tableSlot"}
 ]
