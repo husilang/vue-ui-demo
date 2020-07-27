@@ -14,5 +14,6 @@
   {"name": "tag", "navName": "tag", "path": "/tag"},
   {"name": "badge", "navName": "badge", "path": "/badge"},
   {"name": "table", "navName": "table", "path": "/table"},
-  {"name": "tableSlot", "navName": "tableSlot", "path": "/tableSlot"}
+  {"name": "tableSlot", "navName": "tableSlot", "path": "/tableSlot"},
+  {"name": "tree", "navName": "tree", "path": "/tree"}
 ]
